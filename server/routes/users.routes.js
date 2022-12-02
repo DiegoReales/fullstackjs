@@ -4,12 +4,12 @@ import { addUser, deleteUser, getUsers, updateUser } from "../controllers/user.c
 
 const router = Router()
 
-router.get("/", getUsers)
+router.get("/users", getUsers)
 
 router.post("/users", addUser)
 
-router.put("/:id", updateUser)
+router.put("/users/:id", updateUser)
 
-router.delete("/:id", deleteUser)
+router.delete("/users/:id", deleteUser)
 
 export default router

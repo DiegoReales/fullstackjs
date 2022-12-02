@@ -70,7 +70,7 @@ const Form = ({ getUsers, onEdit, setOnEdit }) => {
 
     if (onEdit) {
       await axios
-        .put(`${BASE_URL}/users` + onEdit.id, {
+        .put(`${BASE_URL}/users/` + onEdit.id, {
           name: user.name.value,
           email: user.email.value,
           phone: user.phone.value,
